@@ -1,4 +1,0 @@
-interface:
-  display_name: "简历有据 Resume Evidence"
-  short_description: "基于岗位需求和真实经历诊断简历、追问事实、改写并模拟复查"
-  default_prompt: "使用 $resume-evidence 根据我的简历和岗位 JD 进行诊断、事实确认、改写与复查。"
