@@ -1,0 +1,7 @@
+{
+  "teal": {"label": "浅蓝绿", "light": "#E7F3F1", "accent": "#39766F"},
+  "green": {"label": "浅绿", "light": "#EDF4E8", "accent": "#58754C"},
+  "pink": {"label": "浅粉", "light": "#F8EBEF", "accent": "#975F73"},
+  "yellow": {"label": "浅黄", "light": "#FAF3DE", "accent": "#8B743B"},
+  "blue": {"label": "浅蓝", "light": "#EAF1FA", "accent": "#4D7099"}
+}

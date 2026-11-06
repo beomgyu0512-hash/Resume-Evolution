@@ -13,3 +13,7 @@
 事实类型：原简历、用户补充、自评、可核查结果；另记验证状态。AI推断只保留在JD分析中。
 冲突写明两个来源及内容，由用户裁定；受影响条目未决前不用于增强主张。确认后保留更正历史，标记已有岗位版本可能需重审。
 用户反对诊断时记录原意见和新证据；修正分析，不因不满意分数自动调整权重。
+
+V2 每个岗位另存style.json：layout_version=2.2.0、theme、photo、photo_status、show_photo、language；用户未改时沿用，跳过颜色选择使用teal。
+
+style.json另记font_max_pt=10.5、font_min_pt=9、font_actual_pt、compact、overflow、exported_pages；内容或字体/照片改变后重新测量。

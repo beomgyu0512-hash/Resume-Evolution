@@ -1,0 +1,14 @@
+const assert=require('node:assert/strict');
+const {choose,sizes,availableMm}=require('../skills/resume-evolution/assets/resume/fit.js');
+assert.equal(availableMm,273);
+assert.equal(choose(()=>200).bodyPt,10.5);
+assert.equal(choose(pt=>pt>=10.25?280:260).bodyPt,10);
+assert.equal(choose(pt=>pt>9.5?280:266).bodyPt,9.5);
+assert.equal(choose(pt=>pt>9.25?280:266).bodyPt,9.25);
+assert.equal(choose(pt=>pt>9?280:266).bodyPt,9);
+const compact=choose((pt,c)=>c?260:300);assert.equal(compact.bodyPt,9);assert.equal(compact.compact,true);assert.equal(compact.overflow,false);
+const over=choose(()=>400);assert.equal(over.bodyPt,9);assert.equal(over.overflow,true);
+assert.equal(choose(()=>273).overflow,false);
+assert.equal(choose(()=>90).bodyPt,10.5);
+assert(sizes.every(pt=>pt>=9&&pt<=10.5));
+console.log('PASS: maximum-fit selection, font floor, compact fallback, boundary and overflow');
